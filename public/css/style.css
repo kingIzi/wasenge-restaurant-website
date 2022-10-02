@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambay&display=swap");
+
+body {
+  /* background: #222; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  font-family: "Cambay";
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 0 0;
+}
+
+.logo img {
+  width: 180px;
+  margin-top: 8px;
+}
+
+.welcome-text {
+  color: #eee;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  width: 90%;
+}
+
+.custom-btn {
+  font-size: 20px;
+  background: none;
+  border: 2px solid #e5a71a;
+  border-radius: 30px;
+  padding: 0 30px 0 30px;
+  margin-bottom: 12px;
+  transition: 0.3s;
+  color: #e5a71a;
+}
+
+.custom-btn a {
+  text-decoration: none;
+}
+
+.custom-btn:hover {
+  background: #e5a71a;
+  color: #000;
+  border: 4px solid #000;
+}
+
+/* New try */
+.index-main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #222;
+}
+
+nav {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.index-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.hero .d-flex {
+  padding-top: 100px;
+}
+
+.hero .d-flex img {
+  width: 100%;
+  height: 100px;
+}
+
+.hero-nav {
+  flex: 2;
+  border: none;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/mama-food.jpg);
+  background-size: cover;
+  background-position: cover;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-svg {
+  position: relative;
+  float: left;
+}
+
+.hero-nav nav ul {
+  display: block;
+}
+
+.hero-nav nav li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav-items-flex div > svg {
+  margin-left: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.hero-nav nav ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 30px;
+  transition: ease-in 0.2s;
+}
+
+.hero-nav nav ul li a:hover {
+  color: #e5a71a;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container > div {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.menu-container {
+  overflow: hidden;
+}
+
+.dish-container {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.myBtn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #111;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 3px;
+  box-shadow: -3px -3px 7px #11111123, 3px 3px 5px rgba(0, 0, 0, 0.288);
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active,
+.myBtn:hover {
+  background-color: #e5a71a;
+  color: #000;
+}
+
+.item-label {
+  padding: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-label span {
+  color: #eee;
+  font-size: 24px;
+  border-bottom: #e5a71a solid 1px;
+}
+
+.menu-col {
+  /* border: #e5a71a solid 1px; */
+  /* border-radius: 25% 20%; */
+}
+
+.menu-poster-1 {
+  background-color: #333;
+  border-radius: 10% 25%;
+  /* transform: translate(-8%, 0%); */
+  border: #e5a71a solid 1px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+  max-height: 300px;
+  margin-bottom: 8px;
+}
+
+.menu-poster-1:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.menu-poster-1 h5 {
+  font-family: "Cambay";
+  padding: 10px;
+}
+
+.menu-poster-1 img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.menu-poster-1 span {
+  position: relative;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  background-color: #e5a71a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75%;
+}
+
+.dish-option {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: none;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/mama-restaurant.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #989898;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #e5a71a;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.dish-translate {
+  border: #e5a71a solid 1px;
+  border-radius: 35% 20%;
+  padding: 8px;
+}
+
+.about-us-banner div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 35% 20%;
+  transform: translate(6%, 4px);
+  background-position: cover;
+  background-size: cover;
+}
+
+.about-us-banner ul {
+  display: block;
+}
+
+.about-us-banner ul li {
+  list-style: none;
+  position: relative;
+  float: right;
+  right: 0;
+  margin: 0 8px 0 8px;
+}
+
+.about-us-banner ul li span {
+  color: #e5a71a;
+}
+
+@media only screen and (min-width: 1000px) {
+  .banner-svg svg {
+    right: -100px;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .welcome-text {
+    top: 30%;
+  }
+  /*New Items*/
+  .hero-nav {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/mama-restaurant.jpg);
+  }
+  .hero-nav nav ul {
+    display: inline-flex;
+  }
+  .about-us-detail h1,
+  .about-us-detail p {
+    margin-left: 20px;
+  }
+}
